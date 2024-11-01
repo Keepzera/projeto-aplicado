@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.celular {
+    width: 300px;
+    height: 600px;
+    background-color: #dcdcdc; 
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    width: 80%; 
+    max-width: 200px; 
+    height: auto; 
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px; 
+}
+
+.tela {
+    width: 90%;
+    height: 80%; 
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10px; 
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.tela h3 {
+    color: #ff7e5f;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px; 
+}
+
+.tela p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #dcdcdc; 
+    border-radius: 0 0 30px 30px;
+}
+
+.botao {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(145deg, #666, #888);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #888, #aaa); 
+}
+
+.imagem-botao {
+    width: 70%; 
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+select, button, input, textarea {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #ff7e5f;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #feb47b;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+.remove-button {
+    color: #d9534f;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.remove-button:hover {
+    color: #c9302c;
+}
